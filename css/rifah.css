@@ -1,0 +1,15 @@
+.menu{
+	background-color:cyan;
+	float :right;
+	padding :3%;
+
+}
+.circle1{
+	border-radius: 80%;
+	
+
+}
+.circle2{
+	border-radius: 50%;
+
+}

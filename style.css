@@ -54,8 +54,8 @@ ul li{
 .partition{
 	
 	border-style: groove;
-	padding :20px;
-	height:500px;
+    padding :20px;
+	
 	margin:5px;
 }
 .webpartition{

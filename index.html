@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -68,6 +69,40 @@
   .hobbyart{
     color:  #fae3c6;
   }
+  .fa-instagram {
+  background: #bb173a;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin:0;
+  border-radius: 50%;
+}
+.exptitle{
+  text-decoration: underline;
+}
+
+
  
   </style>
 </head>
@@ -106,7 +141,7 @@
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin worktitle">I Have Worked With  </h3>
+  <h3 class="margin worktitle heading">I Have Worked With  </h3>
   <h4 > <mark>Machine Learning </mark></h4>
   <ul>
   	<li>Python - Tensorflow, Keras, Scikit Learn, Numpy, Matplotlib </li>
@@ -131,22 +166,22 @@
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h2 class="margin heading">Experiences </h2>
+  <h2 class="margin heading exptitle">Experiences </h2>
   <div class="row">
  		<div class="col-sm-4">
- 		<h4 class="heading">Lecturer of BRAC University (2020)</h4>
+ 		<h3 class="heading">Lecturer of BRAC University (2020)</h3>
   			<p>Computer Architecture (Theory),
         Introduction to Programming Language(Lab), Data Structures(Lab), Digital Logic Design(Lab), Operating Systems(Lab), 
         Microprocessors(Lab)</p>
       </div>
       <div class="col-sm-4"> 
-        <h4 class="heading"> Front-End Developer Intern(2019)</h4>
+        <h3 class="heading"> Front-End Developer Intern (2019)</h3>
         <p>Worked at AnexaTech Ltd., learning and working with Javascript frameworks i.e Angular and Materials</p>
   
     </div>
       	<div class="col-sm-4">
-     	 <h4 class="heading"> Student Tutor of BRAC University(2018)</h4>
-      		<p>Appointed as the Student Tutor/Teachng Assistant of CSE110(Programming Language 1) under CSE department for Fall2018</p>
+     	 <h3 class="heading"> Student Tutor of BRAC University (2018)</h3>
+      		<p>Appointed as the Student Tutor/Teaching Assistant of CSE110(Programming Language 1) under CSE department for Fall2018</p>
       <!--<img src="" class="img-responsive margin" style="width:100%" alt="Image">-->
     	</div>
   
@@ -166,7 +201,7 @@ Score Based On Credit Transaction And Relevant Profile Data" using machine learn
   </div>
 
   <div class="container-fluid bg-5 text-center"> 
-    <h4 class=" margin heading">What Keeps Me Going : </h4>
+    <h3 class=" margin heading worktitle">What Keeps Me Going </h3>
     <div class="col-sm-4">
      <h5 class="hobbysub"> <mark>ART</mark></h5>
         <p style="color:#e5eeb1"> <small>At times when I miss my old-self,</small> <br> I  <b>paint</b> <em>natures/abstracts/still-life objects</em>  
@@ -218,7 +253,16 @@ Score Based On Credit Transaction And Relevant Profile Data" using machine learn
 </div>
 <!-- Footer -->
 <footer id="footer" class="container-fluid bg-3 text-center">
-  <p>If you would like to contact me, please  <a href = "mailto: rifahz999@gmail.com" style="color:#b45763"><b>Email Me</b></a> <a href=""></p> 
-</footer>
+  <div>Follow or contact me here if you wish to : <br>
+    <a href="https://www.linkedin.com/in/rifah-aziz-50896a116/" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/rifah_aziz/" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/rifah.aziz05/" class="fa fa-facebook"></a>
+    <a href="mailto: rifahz999@gmail.com" class="fa fa-google"></a>
+
+  </div>
+  <!--
+  <p class="mailme">If you would like to contact me, please  <a href = "mailto: onimaflies@gmail.com" style="color:#b45763">
+    <b>Email Me</b></a> <a href=""></p> -->
+  </footer>
 </body>
 </html>

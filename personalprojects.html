@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Rifah's Personal Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #ADADAD /*#f5f6f7;*/
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+      .bg-1 {
+          background-color: #CEBEBE;
+          #6D2E46;
+          #A46E7F;
+          #9E5A63;
+          color: #000000;
+      }
+
+      .bg-2 {
+          background-color: #E4E1DB;
+          #F3EDE2;
+          #A26769;
+          #644E5B;
+          color: #000000;
+      }
+
+      .bg-3 {
+          background-color: #ffffff;
+          color: #000000;
+      }
+
+      .bg-4 {
+          background-color: #D5B9B2;
+          #ECE2D0;
+          #97AABD;
+          color: #000000;
+      }
+
+      .bg-5 {
+          background-color: #D5B9B2;
+          #987689;
+          color: #000000;
+      }
+  
+  .bg-6{
+     background-color:#D7CFCF; /*  */
+    color: black;
+  }
+  .bg-7{
+     background-color:#ECDDC3;
+     color:black;
+  }
+  .bg-8{
+     background-color:#D8C6AA;
+     color:black;
+  }
+  .container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .navbar-brand{
+    font-size: 25px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-style: bold;
+    letter-spacing: 4px;
+  }
+  .navbar-nav  li a:hover {
+    color: #19E5A63 !important; /*1ABC9C*/
+  }
+  .space{
+    padding : 20px;
+    margin:10px;
+  }
+    .fa-instagram {
+  background: #bb173a;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin:0;
+  border-radius: 50%;
+}
+  
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+     <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><br>Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <!--<li><a href="https://docs.google.com/document/d/1SmfCuSp1n1A0qb28DuflnQvqXlfkBqMZKLku0T_rfYw/edit?usp=sharing" target="_blank">Resume</a></li>-->
+            <li><a href="masters.html">Masters</a></li>
+            <!-- <a href="https://rifahswork.wordpress.com/">Masters </a></li>  david mould's work-->
+            <li><a href="projects.html">Undergrad</a></li>
+            <li><a href="personalprojects.html">Personal </a></li>
+            <li><a href="art.html">Art/Architecture</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 ">
+  <h2 class="text-center display-3 font-italic"> DeepLearning Projects </h2> <br>
+</div>
+
+<div class="container-fluid ">
+
+      <div class=" partition space  bg-7">
+          <h3 class="text-center"> Emotion Detection Model </h3>
+            <p>A model built with CNN that detects if a person is happy based on their smiles. This is the first time I have used Keras in Python. The train accuracy is 99% while test accuracy is 97%. <br>
+           Training set = 600 pictures of size (600,64,64,3) <br> and 
+            Test-set = 150 pictures of size (10,64,64,3) <br>
+            <br>
+            Help taken from the deeplearning.ai course by Andrew Ng on Coursera. <br></p>
+    
+            <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Emotion%20Detection" target="_blank"> View on Github</a> 
+            </button> <br><br>
+      
+          <div class="text-left  col-sm-6">
+            <img src="" class="text-right framepic" height="350px" >
+          </div>
+      </div>
+
+      <div class=" partition space bg-6">
+          <h3 class="text-center"> Face Recognition Model </h3>
+            <p>What's the difference between face verification and recognition?<br>
+              Face verification is a simpler task that involves matching the input image with the claimed person's image. It is a 1:1 matching problem! <br>
+              However, face recognition is a bit more complex. It is matching a given input image across a database of images to find who the particular individual is. It is a 1:K matching problem! <br><p>
+            <p>Both face recognition and verification are applied here with triplet loss function and a pre-trained model to map face images into 128-dimensional encodings. Numpy,Keras, Tensorflow, pandas, cv2 are used to build this model.
+           
+            <br> <br>
+            Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br></p>
+    
+            <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Face%20Recognition" target="_blank"> View on Github</a> 
+            </button> <br><br>
+      
+          <div class="text-left  col-sm-6">
+            <img src="" class="text-right framepic" height="350px" >
+          </div>
+      </div>
+
+   <div class=" partition space  bg-5">
+          <h3 class="text-center"> Neural Style Transfer </h3>
+            <p>I absolutely <strong>LOVE</strong> this project as it generates ART with neural networks. 
+              Neural Style Transfer algorithm is used to merge an image's content with another image's style to output unique styled art. A pre-trained model is used to do this task <br>
+              Content cost function is used using tensorflow. Style cost is computed using Style Matrix( Gram Matrix) and Style Weights. Total cost is the addition of these costs with added weights and Adam optimizer is used. <br>
+              Libraries used are matplotlib, numpy, pprint, scipy,tensorflow, PIL, etc. <br><br>
+
+
+
+            Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br></p>
+    
+            <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Neural%20Style%20Transfer" target="_blank"> View on Github</a> 
+            </button> <br><br>
+      
+          <div class="text-left  col-sm-6">
+            <img src="" class="text-right framepic" height="350px" >
+          </div>
+      </div>
+
+       <div class=" partition space bg-8">
+          <h3 class="text-center"> Autonomous Driving using YOLO algorithm</h3>
+            <p>Here, we are mainly creating object detection on a car detection dataset and dealing with bounding boxes
+
+              <br> <br>
+            Libraries used : keras,numpy,scipy,matplotlib, tensorflow, pandas,PIL, argparse
+              <br><br>
+            "You Only Look Once" (YOLO) performs object detection, and then can be applied it to car detection. As YOLO model is very computationally expensive to train, we have loaded pre-trained weights. It is a popular algorithm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
+            <br>
+            The YOLO architecture is: IMAGE (m, 608, 608, 3) -> DEEP CNN -> ENCODING (m, 19, 19, 5, 85). <br><br>
+
+            The input is a batch of images, and each image has the shape (m, 608, 608, 3)
+            The output is a list of bounding boxes along with the recognized classes.  <br>
+
+            Anchor boxes are chosen by exploring the training data to choose reasonable height/width ratios that represent the different classes. <br> 
+           
+            <br>
+            Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br></p>
+    
+            <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/YOLO%20algorithm" target="_blank"> View on Github</a> 
+            </button> <br><br>
+      
+          <div class="text-left  col-sm-6">
+            <img src="" class="text-right framepic" height="350px" >
+          </div>
+      </div>
+
+
+
+
+  
+  </li>
+ </div>
+
+<!--
+<div class="partition">
+   <div class="text-left col-sm-6">
+      <li>Predicting Sales of Supershop by Python</li>
+      <p></p>
+     </div>
+   </div>
+   </div> 
+-->
+ 
+  
+</div>
+
+<!-- Third Container (Grid) -->
+
+<!-- Footer -->
+<footer id="footer" class="container-fluid bg-3 text-center">
+  <div style="float:left">
+    <a href="https://www.linkedin.com/in/rifahsamaaziz/" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/rifah_aziz/" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/rifah.aziz05/" class="fa fa-facebook"></a>
+    <a href="mailto: rifahz999@gmail.com" class="fa fa-google"></a>
+
+  </div>
+
+  <div style="float: right">
+    <small> &copy; 2019 Rifah Sama Aziz</small>
+  </div>
+
+  </footer>
+
+</body>
+</html>

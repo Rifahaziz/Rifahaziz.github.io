@@ -1,0 +1,209 @@
+*.html,body{
+	margin:0px;
+	padding:0px;
+}
+header,footer{
+	background-color:#FAAB88;
+	padding:10px;
+	
+}
+
+.menu{
+	display:inline-block;
+
+}
+nav{
+	background-color: #FBF3C0;
+	padding :10px;
+	width :100%;
+}
+.container{
+
+
+}
+.pic{
+	float:left;
+}
+.h1{
+	text-align: center;
+
+}
+.intro{
+	text-align: center;
+
+}
+ul{
+	list-style: none;
+}
+ul li{
+	display: inline-block;
+	padding:20px;
+	border-width: 1px;
+	border-color: white;
+}
+.heading{
+	font-weight: bold; 
+}
+.visiblefont{
+	color:#501b1d;
+	float:right;
+}
+.framepic{
+	padding :10px;
+	margin :10px;
+}
+.partition{
+	
+	border-style: groove;
+    padding :20px;
+	
+	margin:5px;
+}
+.webpartition{
+
+	border-spacing: 50px;
+
+	
+
+
+}
+ol li, ol p,ol button{
+	padding:10px;
+	margin-left:40px;
+}
+.artframe{
+	height:100px;
+}
+.row{
+	grid-row-gap:500px; 
+	margin:50px;
+}
+.caption{
+	padding-top:10px;
+}
+
+body {
+	font: 20px Montserrat, sans-serif;
+	line-height: 1.8;
+	color: #CEBEBE;
+	/*#ADADAD #f5f6f7;*/
+}
+
+.p {
+	font-size: 16px;
+}
+
+.margin {
+	margin-bottom: 45px;
+}
+
+.bg-1 {
+	background-color: #CEBEBE;
+
+	color: #000000;
+}
+
+.bg-2 {
+	background-color: #E4E1DB;
+	
+	color: #000000;
+}
+
+.bg-3 {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.bg-4 {
+	background-color: #D5B9B2;
+/*	#ECE2D0;
+	#97AABD;*/
+	color: #000000;
+}
+
+.bg-5 {
+	background-color: #D5B9B2;
+/*	#987689;*/
+	color: #000000;
+}
+
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 15px;
+	letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+	color: #19E5A63 !important; /*1ABC9C*/
+}
+
+.worktitle {
+	color: #00000;
+/*	# text-decoration: underline;*/
+}
+
+.yoga {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.hobbysub {
+	color: #ebccda;
+}
+
+.hobbyart {
+	color: #fae3c6;
+}
+
+.fa-instagram {
+	background: #bb173a;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-google {
+	background: #dd4b39;
+	color: white;
+}
+
+.fa {
+	padding: 10px;
+	font-size: 20px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0;
+	border-radius: 50%;
+}
+
+.exptitle {
+	text-decoration: underline;
+}
+
+.boldtitle {
+	font-weight: 500;
+	text-decoration: underline;
+}
+

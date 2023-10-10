@@ -185,10 +185,116 @@
 
 
 
+    <!-- First Container -->
+    <div class="container-fluid bg-1 ">
+        <h2 class="text-center display-3 font-italic"> My Own Projects </h2> <br>
+    </div>
+
+    <div class="container-fluid ">
+
+        <div class=" partition space  bg-7">
+            <h3 class="text-center"> Emotion Detection Model </h3>
+            <p>
+                A model built with CNN that detects if a person is happy based on their smiles. This is the first time I have used Keras in Python. The train accuracy is 99% while test accuracy is 97%. <br>
+                Training set = 600 pictures of size (600,64,64,3) <br> and
+                Test-set = 150 pictures of size (10,64,64,3) <br>
+                <br>
+                Help taken from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+            </p>
+
+            <button class="btn btn-secondary" type="button">
+                <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Emotion%20Detection" target="_blank"> View on Github</a>
+            </button> <br><br>
+
+            <div class="text-left  col-sm-6">
+                <img src="" class="text-right framepic" height="350px">
+            </div>
+        </div>
+
+        <div class=" partition space bg-6">
+            <h3 class="text-center"> Face Recognition Model </h3>
+            <p>
+                What's the difference between face verification and recognition?<br>
+                Face verification is a simpler task that involves matching the input image with the claimed person's image. It is a 1:1 matching problem! <br>
+                However, face recognition is a bit more complex. It is matching a given input image across a database of images to find who the particular individual is. It is a 1:K matching problem! <br>
+            <p>
+            <p>
+                Both face recognition and verification are applied here with triplet loss function and a pre-trained model to map face images into 128-dimensional encodings. Numpy,Keras, Tensorflow, pandas, cv2 are used to build this model.
+
+                <br> <br>
+                Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+            </p>
+
+            <button class="btn btn-secondary" type="button">
+                <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Face%20Recognition" target="_blank"> View on Github</a>
+            </button> <br><br>
+
+            <div class="text-left  col-sm-6">
+                <img src="" class="text-right framepic" height="350px">
+            </div>
+        </div>
+
+        <div class=" partition space  bg-5">
+            <h3 class="text-center"> Neural Style Transfer </h3>
+            <p>
+                I absolutely <strong>LOVE</strong> this project as it generates ART with neural networks.
+                Neural Style Transfer algorithm is used to merge an image's content with another image's style to output unique styled art. A pre-trained model is used to do this task <br>
+                Content cost function is used using tensorflow. Style cost is computed using Style Matrix( Gram Matrix) and Style Weights. Total cost is the addition of these costs with added weights and Adam optimizer is used. <br>
+                Libraries used are matplotlib, numpy, pprint, scipy,tensorflow, PIL, etc. <br><br>
 
 
 
-  
+                Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+            </p>
+
+            <button class="btn btn-secondary" type="button">
+                <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Neural%20Style%20Transfer" target="_blank"> View on Github</a>
+            </button> <br><br>
+
+            <div class="text-left  col-sm-6">
+                <img src="" class="text-right framepic" height="350px">
+            </div>
+        </div>
+
+        <div class=" partition space bg-8">
+            <h3 class="text-center"> Autonomous Driving using YOLO algorithm</h3>
+            <p>
+                Here, we are mainly creating object detection on a car detection dataset and dealing with bounding boxes
+
+                <br> <br>
+                Libraries used : keras,numpy,scipy,matplotlib, tensorflow, pandas,PIL, argparse
+                <br><br>
+                "You Only Look Once" (YOLO) performs object detection, and then can be applied it to car detection. As YOLO model is very computationally expensive to train, we have loaded pre-trained weights. It is a popular algorithm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
+                <br>
+                The YOLO architecture is: IMAGE (m, 608, 608, 3) -> DEEP CNN -> ENCODING (m, 19, 19, 5, 85). <br><br>
+
+                The input is a batch of images, and each image has the shape (m, 608, 608, 3)
+                The output is a list of bounding boxes along with the recognized classes.  <br>
+
+                Anchor boxes are chosen by exploring the training data to choose reasonable height/width ratios that represent the different classes. <br>
+
+                <br>
+                Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+            </p>
+
+            <button class="btn btn-secondary" type="button">
+                <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/YOLO%20algorithm" target="_blank"> View on Github</a>
+            </button> <br><br>
+
+            <div class="text-left  col-sm-6">
+                <img src="" class="text-right framepic" height="350px">
+            </div>
+        </div>
+
+
+
+
+
+        </li>
+    </div>
+
+
+
 
 
 

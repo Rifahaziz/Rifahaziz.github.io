@@ -215,24 +215,45 @@
 
         <div class="partition">
             <div class="text-right   col-sm-5">
-                <img src="images/gan.png" class="text-right framepic" width="100%" />
-               
-             </div>
-             <div class="text-left webpartition  col-sm-7">
+                <figure>
+                    <img src="images/dataset.png" class="text-right framepic" width="100%" />
+                    <figcaption> <h6>Original Images Fed </h6> </figcaption>
+                </figure>
+                <br />
+                <figure>
+                    <img src="images/gan.png" class="text-right framepic" width="100%" />
+                    <figcaption> <h6>Synthetically Generated Images </h6> </figcaption>
+
+                </figure>
+
+
+
+            </div>
+            <div class="text-left webpartition  col-sm-7">
                 <h3>GANs (Generative Adversarial Networks) on Limited Data </h3>
-                <p>
-                    Explored ways to overcome the problem of limited data by using various GAN methods to increase the dataset by synthetically creating new but similar data.
-                    <h6>
-                        
-                    </h6>
-                </p>
-                <button class="btn btn-secondary" type="button"> <a class="visiblefont" href="https://github.com/Rifahaziz/GANs_on_limited_data.git" target="_blank">View on Github </a></button> <br><br>
+
+
+                <h5> Problem : Shortage of Image data with labels</h5>
+                <h5>Solution : Synthetically generate image data with Generative AI Models</h5>
+                <h5>
+                    - Used pre-trained StyleGAN2, GP-GAN and SIN-GAN trained on Breast Cancer images. <br />
+                    - The model performed horrible initially without fine-tuning<br />
+                    - Fine-tuned learning rates and decay values<br />
+                    - Changed the regularizor loss to LeCam Loss to improve the generalization of the images.<br />
+                    - Synthetically generated better images based on different batch sizes<br />
+                    - If more GPU power was available, the detailing of the generated images would be possible to achieve <br />
+                </h5>
+
+                <button class="btn btn-secondary" type="button"> <a class="visiblefont" href="https://github.com/Rifahaziz/GANs_on_limited_data.git" target="_blank">View on Github </a></button> <br />
+                <img src="images/table2.png" class="text-right" width="42.5%" /><img src="images/table1.png" class="text-right" width="50%" />
 
 
 
+            </div>
 
-              </div>
+
             <br />
+            <br><br>
 
 
         </div>

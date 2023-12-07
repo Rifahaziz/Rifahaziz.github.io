@@ -27,18 +27,19 @@
         }
 
         .bg-1 {
-            background-color: #CEBEBE;
+            background-color: #CBC7C6;
+            /*#CEBEBE;
             #6D2E46;
             #A46E7F;
-            #9E5A63;
+            #9E5A63;*/
             color: #000000;
         }
 
         .bg-2 {
             background-color: #E4E1DB;
-            #F3EDE2;
+            /*#F3EDE2;
             #A26769;
-            #644E5B;
+            #644E5B;*/
             color: #000000;
         }
 
@@ -48,15 +49,22 @@
         }
 
         .bg-4 {
-            background-color: #D5B9B2;
+            background-color: #BCB9C1;
+            #D5B9B2;
             #ECE2D0;
             #97AABD;
             color: #000000;
         }
 
         .bg-5 {
-            background-color: #D5B9B2;
+            background-color: #D1C3B9;
+            #C6D4C2;
             #987689;
+            color: #000000;
+        }
+
+        .bg-6 {
+            background-color: #CEBEBE;
             color: #000000;
         }
 
@@ -142,12 +150,12 @@
     </nav>
 
     <!-- First Container -->
-    <div class="container-fluid  text-left bg-1">
-        <h3 class="text-center"> Projects </h3> <br>
-        <hr width="100%;"
-            color="red"
-            size="10"
-            align="left">
+    <div class="container-fluid  text-left bg-6">
+        <h2 class="margin text-center">Computer Vision (CV)</h2>
+        <!--    <hr width="100%;"
+        color="red"
+        size="10"
+        align="left">-->
 
         <div class=" partition">
             <div class="col-sm-5">
@@ -162,47 +170,81 @@
                         Third Image : Output from Yolov7  <br /> <br />
                         Fourth Image : Output from TokenFusion <br />
                     </h6>
+                    <br />
+                    <img src="images/methodology.png" class="text-right framepic" width="100%" />
+                    <br />
+                    <img src="images/mean.jpg" class="text-right framepic" width="100%" />
+                    <img src="images/iou.jpg" class="text-right framepic" width="100%" />
 
-                    <h5>
-                        *If you're interested to discuss more or view the code, please <a href="mailto:rifahsamaaziz@gmail.com.com">Email Me</a> .
-                        Due to privacy constraints, you will need extra permission from the Professor to view the code.
-                    </h5>
-                </p> 
+                </p>
             </div>
 
             <div class="text-left webpartition  col-sm-7">
-                <h3> RGB-D Fusion for Segmentation on Indoor data for Autonomous Wheelchair  </h3>
-                <h5>
+                <h2 class="margin text-left">
+                    PROJECT 1: RGB-D Fusion for Segmentation on Indoor data for Autonomous Wheelchair
+                </h2>
+                <p>
                     Research Project - Worked on image+depth fusion techniques with transformer networks and with traditional YOLOV7 for segmentation
-                    on indoor dataset used for autonomous wheelchair scenario. </h5>
-                
-                  
-                                                                               <h5>Problem - Automate the motorized wheelchair by creating an understanding of the surrounding scene </h5>
-                                                                               <h5>
-                                                                                   Solution - Using various segmentation methods, analyze the pros and cons of the outputs based on the
-                                                                                   model architectures, and improve the performance on the collected dataset.
+                    on indoor dataset used for autonomous wheelchair scenario.
+                </p>
+
+
+                <p>Problem - Automate the motorized wheelchair by creating an understanding of the surrounding scene </p>
+                <p>
+                    Solution - Using various segmentation methods, analyze the pros and cons of the outputs based on the
+                    model architectures, and improve the performance on the collected dataset.
+                </p>
+
+
+                <h5>
+                    <ul>
+                        <li>
+                            With the goal of contributing to the automation of a motorized wheelchair, this research project focuses on
+                            deep learning approaches and data fusion techniques on indoor data. The objective of the research project is to
+                            perform segmentation on indoor dataset collected manually from a camera at Carleton University.
+                        </li>
+                        <br />
+                        <li>
+                            With the goal of contributing to the automation of a motorized wheelchair, this research project focuses on
+                            deep learning approaches and data fusion techniques on indoor data. The objective of the research project is to
+                            perform segmentation on indoor dataset collected manually from a camera at Carleton University.
+                        </li>
+                        <br />
+
+                        <li>
+                            We mainly explore and compare two segmentation methods, traditional neural networks and encoder-decoder transformers, in terms of
+                            performance and outputs.
+                        </li>
+                        <br />
+                        <li>
+                            The traditional model Yolov7 uses solely image inputs with traditional
+                            CNNs for segmentation tasks while the transformer method TokenFusion fuses images withcorresponding depths in transformer encoder-decoder models.
+                        </li>
+                        <br />
+                        <li>
+                            The results demonstrate that the inclusion of depth images
+                            are highly beneficial for segmenting the interior structure of the indoor environment, and the performance based on
+                            training, time and accuracy are also compared between the two models. Both the methods are quite different in terms of
+                            input modalities and backbone networks, and the advantages and disadvantages of both methods are discussed.
+                        </li>
+
+                    </ul>
+
+
+
+
+
+
+
                 </h5>
-              
-          
-                    <h6>
-                        With the goal of contributing to the automation of a motorized wheelchair, this research project focuses on
-                        deep learning approaches and data fusion techniques on indoor data. The objective of the research project is to
-                        perform segmentation on indoor dataset collected manually from a camera at Carleton University.
 
 
-                        We mainly explore and compare two segmentation methods, traditional neural networks and encoder-decoder transformers, in terms of
-                        performance and outputs.
-
-                        The traditional model Yolov7 uses solely image inputs with traditional
-                        CNNs for segmentation tasks while the transformer method TokenFusion fuses images withcorresponding depths in transformer encoder-decoder models.
-
-                        The results demonstrate that the inclusion of depth images
-                        are highly beneficial for segmenting the interior structure of the indoor environment, and the performance based on
-                        training, time and accuracy are also compared between the two models. Both the methods are quite different in terms of
-                        input modalities and backbone networks, and the advantages and disadvantages of both methods are discussed.
-                    </h6>
-              
-
+                <br />
+                <br />
+                <h5>
+                    *If you're interested to discuss more or view the code, please <a href="mailto:rifahsamaaziz@gmail.com.com">Email Me</a> .
+                    Due to privacy constraints, you will need extra permission from the Professor to view the code.
+                </h5>
                 <br />
                 <br />
             </div>
@@ -226,27 +268,39 @@
                     <figcaption> <h6>Synthetically Generated Images </h6> </figcaption>
 
                 </figure>
+                <img src="images/table2.png" class="text-right" width="100%" /><img src="images/table1.png" class="text-right" width="100%" />
 
 
 
             </div>
             <div class="text-left webpartition  col-sm-7">
-                <h3>GANs (Generative Adversarial Networks) on Limited Data </h3>
+                <h2 class="margin text-left">
+                    PROJECT 2 : GANs (Generative Adversarial Networks) on Limited Data
+                </h2>
 
 
-                <h5> Problem : Shortage of Image data with labels</h5>
-                <h5>Solution : Synthetically generate image data with Generative AI Models</h5>
+                <p> Problem : Shortage of Image data with labels</p>
+                <p>Solution : Synthetically generate image data with Generative AI Models</p>
                 <h5>
-                    - Used pre-trained StyleGAN2, GP-GAN and SIN-GAN trained on Breast Cancer images. <br />
-                    - The model performed horrible initially without fine-tuning<br />
-                    - Fine-tuned learning rates and decay values<br />
-                    - Changed the regularizor loss to LeCam Loss to improve the generalization of the images.<br />
-                    - Synthetically generated better images based on different batch sizes<br />
-                    - If more GPU power was available, the detailing of the generated images would be possible to achieve <br />
+                    <ul>
+                        <li>Used pre-trained StyleGAN2, GP-GAN and SIN-GAN trained on Breast Cancer images. </li>
+                        <br />
+                        <li>The model performed horrible initially without fine-tuning</li>
+                        <br />
+                        <li>Fine-tuned learning rates and decay values</li>
+                        <br />
+                        <li>Changed the regularizor loss to LeCam Loss to improve the generalization of the images.</li>
+                        <br />
+                        <li>Synthetically generated better images based on different batch sizes</li>
+                        <br />
+                        <li>If more GPU power was available, the detailing of the generated images would be possible to achieve. </li>
+                        <br />
+                    </ul>
+
                 </h5>
 
                 <button class="btn btn-secondary" type="button"> <a class="visiblefont" href="https://github.com/Rifahaziz/GANs_on_limited_data.git" target="_blank">View on Github </a></button> <br />
-                <img src="images/table2.png" class="text-right" width="42.5%" /><img src="images/table1.png" class="text-right" width="50%" />
+
 
 
 
@@ -258,70 +312,117 @@
 
 
         </div>
-        <br />
-        <hr width="100%;"
-            color="red"
-            size="10"
-            align="left">
+    </div>
+    <br />
+    <hr width="100%;"
+        color="red"
+        size="10"
+        align="left">
 
+
+    <div class="container-fluid  text-left bg-2">
+
+        <h2 class="margin text-center">Reinforcement Learning (RL)</h2>
 
         <div class="partition">
-            <div class="text-right   col-sm-9">
-                <h3> Maze-Ro Puzzle Game with Procedural Content Generation (PCG) </h3>
-                <p>
-                    Used procedural rule generation to randomly create rules and check its fitness through genetic algorithm. This was a team project of two people.
-                    My portion of the work was the rule generation through genetic algorithm in C# while my teammate worked on creating the display and scene in unity.
 
+            <div class=" single_proj">
+
+                <h3>
+                    Project 3 : Reinforcement Learning for VR Application to Automate Testing
+                </h3>
+                <p class="col-sm-4 ">
+                    Introduced pedagogical learning among RL agents for a naive agent to learn from an expert agent about paths using Q-Learning. The idea
+                    was to automate the testing scenario with RL agents, you may have a look at the full paper that was published at HCII'2022.<br />
+
+
+                    <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://nrc-publications.canada.ca/eng/view/object/?id=092abd61-a800-412c-968e-a86ec8f21029" target="_blank">Link to Paper (HCII'2022)</a></button>
                 </p>
-                <img src="images/maze.png" class="text-center framepic" width="80%" /> <br />
-                <button class="btn btn-secondary " type="button"><a class="visiblefont text-center" href="https://github.com/kristen223/ITEC-5203-Chromatic-Maze/tree/main/5203-Chromatic-Maze/Assets/Scripts/Rifah" target="_blank"> View on GitHub</a> </button>
-            </div>
+                <img src="images/vr.png" class="text-center framepic" width="65%"> <br />
+                <div class=" bg-5 col-sm-4" padding="10px">
+
+                    <h5>
+                        Details:</br> <br />
+                        <ul>
+                            <li> As you can see there was an incident with the truck and the trigger zone around the incident is marked. </li>
+                            <br>
+                            <li>The elevation lands are in levels, which represents a mountain. </li>
+
+                            <br>
+                            <li> The trainee location is at the bottom left.</li>
+                            <br>
+                            <li>
+                                Now where should the trainee learn to go to navigate the incident without being too close to the truck as
+                                oil/gas dripping might be dangerous, but yet close enough to understand in detail about the situation and read the labels on the truck?
+                            </li>
+                            <br>
+                            <li>
+                                Since we don't want humans to do this, we want to automate this with RL agent using reinforcement learning.
+                            </li>
+                            <br>
+                            <li>So the problem is : navigate to a safe space with reward and punishment system.</li>
+                            <br>
+                            <br>
+                            <br />
+                    </h5>
+                </div>
+
+                <div class="bg-1 col-sm-4" padding="10px">
+                    <h5>
+                        <ul>
+                            <li>But how is this solving the overall problem? We need to connect this with the actual problem of building the VR system with the 3D environment.</li>
+                            <br>
+                            <li>Also, we didn't have enough people to try on the VR environment and provide enough data for their experiences, so let's automate the testing system!</li>
+                            <br>
+                            <li>Why need humans to test the VR system? This requires shipping the VR to their places and using thier time. What if we could use AI agents instead of humans?</li>
+                            <br>
+                            <li>This would obviously need a lot of work, but let's initiate the process and see how far I can go. </li>
+                            <br>
+                            <li>Narrowing the borad problem down, now we want to focus on automating one aspect of the whole VR application : navigating to a safe space to observe the incident.</li>
+                            <br>
+                            <br>
+                            <br>
+                            <br />
+                        </ul>
+
+                    </h5>
+                </div>
+                <div class="bg-4 col-sm-4" padding="10px">
+                    <h5>
+                        <ul>
+                            <li>
+                                Also, we don't want to train all new testers from scratch about how to navigate to a desired position. We want one tutor agent who has the best knowledge, and then
+                                other new agents can learn from this tutor
+                            </li>
+                            <br>
+                            <li>
+                                Tried using OpenAI environments, but could not change them to the environment I wanted, so opted for creating a simple environment with basic python.
+                            </li>
+                            <br>
+                            <li>So I train one agent properly with the Q-Learning algorithm and placing rewards/punishments on the map (Details about the functions are on the paper)</li>
+                            <br>
+                            <li>
+                                I introduce a pedagogical system where naive agents can get the knowledge from the trained tutoring agent, by simply making the Q-Learning table of the
+                                tutor agent sharable.
+                            </li>
+                            <br>
+                            <li>Now , whenever the naive agent is confused, it can also lookup the Q-table of the tutor agent, and be guided!</li>
+
+                        </ul>
 
 
 
-            <div class="col-sm-3">
-                <img src="images/maze flowchart.png" class="text-center framepic " width="80%" /> <br>
-            </div>
-            <br />
+
+                    </h5>
 
 
-        </div>
-        <br />
-        <hr width="100%;"
-            color="red"
-            size="10"
-            align="left">
-
-
-
-        <div class=" partition">
-            <div class="col-sm-5">
-                <img src="images/imgsty.jpg" class="text-center framepic " width="100%" />
-            </div>
-
-            <div class="text-left webpartition  col-sm-7">
-                <h3> Artistic Images with Dijsktra's Algorithm </h3>
-                <p>
-                    Inspired by the various elements in rocks and stones, used Dijkstra's algorithm to create artistic images
-                    from a graph structure....
-                    ...
-                    ..
-                    <br />
-                    <br /> <br /> <br /> <br /> <br />
-                </p>
-                <img src="images/imgsty1.png" class="text-right framepic" width="23%" />
-                <img src="images/m4s.png" class="text-right framepic" width="23%" />
-                <img src="images/imgsty2.png" class="text-right framepic" width="23%" />
-                <img src="images/imgsty3.png" class="text-right framepic" width="23%" />
+                </div>
                 <br />
-                <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://github.com/Rifahaziz/Artistic_Images_with_Dijkstra.git" target="_blank"> View on GitHub</a> </button>
+
             </div>
+
         </div>
-        <br />
-        <hr width="100%;"
-            color="red"
-            size="10"
-            align="left">
+    </div>
 
 
 
@@ -336,8 +437,7 @@
 
 
 
-
-        <!--<div class=" artition">
+    <!--<div class=" artition">
         <div class="text-left   col-sm-4">
             <h3> Maze-Ro Puzzle Game with Procedural Content Generation (PCG) </h3>
             <p>
@@ -358,173 +458,66 @@
 
 
     </div>-->
+    <!------------------------DEEPLEARNING.AI ------------------------->
 
+    <div class="container-fluid bg-3 text-left">
+        <h3 class="text-center"> What I've Learned from DeepLearning.ai Specialization </h3> <br>
 
-
-
-
-
-            <!------------------------DEEPLEARNING.AI ------------------------->
-            <div class="container-fluid bg-2 text-left">
-                <h3 class="text-center"> What I've Learned from DeepLearning.ai Specialization </h3> <br>
-                <ul>
-                    <div class="text-left webpartition col-sm-6">
-                    <li><h3> Emotion Detection Model </h3></li>
-                    <p>
-                        A model built with CNN that detects if a person is happy based on their smiles. This is the first time I have used Keras in Python. The train accuracy is 99% while test accuracy is 97%. <br>
-                        Training set = 600 pictures of size (600,64,64,3) <br> and
-                        Test-set = 150 pictures of size (10,64,64,3) <br>
-                        <br>
-                    </p>
-                    <button class="btn btn-secondary" type="button">
-                        <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Emotion%20Detection" target="_blank"> View on Github</a>
-                    </button>
-                    <br />
-                    <br />
-
-                    <li><h3>Face Recognition Model</h3></li>
-                    <p>
-                        What's the difference between face verification and recognition?<br>
-                        Face verification is a simpler task that involves matching the input image with the claimed person's image. It is a 1:1 matching problem! <br>
-                        However, face recognition is a bit more complex. It is matching a given input image across a database of images to find who the particular individual
-                        is. It is a 1:K matching problem! <br>
-                        <br />
-                        Both face recognition and verification are applied here with triplet loss function and a pre-trained model to map face images into 128-dimensional
-                        encodings. Numpy,Keras, Tensorflow, pandas, cv2 are used to build this model.
-
-                    </p>
-                    <button class="btn btn-secondary" type="button">
-                        <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Face%20Recognition" target="_blank"> View on Github</a>
-                    </button>
-                    <br>
-                    <br>
-                    <br />
-                    <br />
-
-
-            </div>
-            <div class="col-sm-1"></div>
-            <div class=" webpartition col-sm-6 text-left">
-                <li><h3> Neural Style Transfer</h3></li>
-                <p>
-                    I absolutely <strong>LOVE</strong> this project as it generates ART with neural networks.
-                    Neural Style Transfer algorithm is used to merge an image's content with another image's style to output unique styled art. A pre-trained model is used to do this task <br>
-                    Content cost function is used using tensorflow. Style cost is computed using Style Matrix( Gram Matrix) and Style Weights. Total cost is the addition of these costs with added weights and Adam optimizer is used. <br>
-                    Libraries used are matplotlib, numpy, pprint, scipy,tensorflow, PIL, etc. <br><br>
-
-                </p>
-                <button class="btn btn-secondary" type="button"> <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Neural%20Style%20Transfer" target="_blank">View on Github </a></button> <br><br>
-
-                <li><h3>Autonomous Driving using YOLO algorithm</h3> </li>
-                <p>
-                    Here, we are mainly creating object detection on a car detection dataset and dealing with bounding boxes
-
-                    <br> <br>
-                    Libraries used : keras,numpy,scipy,matplotlib, tensorflow, pandas,PIL
-                    <br><br>
-                    "You Only Look Once" (YOLO) performs object detection, and then can be applied it to car detection. As YOLO model is very computationally expensive to train, we have loaded pre-trained weights. It is a popular algorithm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
-                    <br>
-                    The YOLO architecture is: IMAGE (m, 608, 608, 3) -> DEEP CNN -> ENCODING (m, 19, 19, 5, 85). <br><br>
-
-                    The input is a batch of images, and each image has the shape (m, 608, 608, 3)
-                    The output is a list of bounding boxes along with the recognized classes.  <br>
-
-                    Anchor boxes are chosen by exploring the training data to choose reasonable height/width ratios that represent the different classes. <br>
-
-                    <br>
-
-                </p>
-
-                <button class="btn btn-secondary" type="button">
-                    <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/YOLO%20algorithm" target="_blank"> View on Github</a>
-                </button> <br><br>
-            </div>
-            </ul>
-        </div>
-
-
-
-
-
-
-        <!-- First Container
-    <div class="container-fluid bg-1 ">
-        <h2 class="text-center display-3 font-italic"> My Own Projects </h2> <br>
-    </div>
-
-    <div class="container-fluid ">
-
-        <div class=" partition space  bg-7">
-            <h3 class="text-center"> Emotion Detection Model </h3>
+        <div class="text-left webpartition col-sm-6">
+            <li><h3> Emotion Detection Model </h3></li>
             <p>
-                A model built with CNN that detects if a person is happy based on their smiles. This is the first time I have used Keras in Python. The train accuracy is 99% while test accuracy is 97%. <br>
+                A model built with CNN that detects if a person is happy based on their smiles using Keras in Python. The train accuracy is 99% while test accuracy is 97%. <br>
                 Training set = 600 pictures of size (600,64,64,3) <br> and
                 Test-set = 150 pictures of size (10,64,64,3) <br>
                 <br>
-                Help taken from the deeplearning.ai course by Andrew Ng on Coursera. <br>
             </p>
-
             <button class="btn btn-secondary" type="button">
                 <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Emotion%20Detection" target="_blank"> View on Github</a>
-            </button> <br><br>
+            </button>
+            <br />
+            <br />
 
-            <div class="text-left  col-sm-6">
-                <img src="" class="text-right framepic" height="350px">
-            </div>
-        </div>
-
-        <div class=" partition space bg-6">
-            <h3 class="text-center"> Face Recognition Model </h3>
+            <li><h3>Face Recognition Model</h3></li>
             <p>
                 What's the difference between face verification and recognition?<br>
                 Face verification is a simpler task that involves matching the input image with the claimed person's image. It is a 1:1 matching problem! <br>
-                However, face recognition is a bit more complex. It is matching a given input image across a database of images to find who the particular individual is. It is a 1:K matching problem! <br>
-            <p>
-            <p>
-                Both face recognition and verification are applied here with triplet loss function and a pre-trained model to map face images into 128-dimensional encodings. Numpy,Keras, Tensorflow, pandas, cv2 are used to build this model.
+                However, face recognition is a bit more complex. It is matching a given input image across a database of images to find who the particular individual
+                is. It is a 1:K matching problem! <br>
+                <br />
+                Both face recognition and verification are applied here with triplet loss function and a pre-trained model to map face images into 128-dimensional
+                encodings. Numpy,Keras, Tensorflow, pandas, cv2 are used to build this model.
 
-                <br> <br>
-                Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
             </p>
-
             <button class="btn btn-secondary" type="button">
                 <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Face%20Recognition" target="_blank"> View on Github</a>
-            </button> <br><br>
+            </button>
 
-            <div class="text-left  col-sm-6">
-                <img src="" class="text-right framepic" height="350px">
-            </div>
+
+            <br>
+            <br>
+            <br />
+            <br />
+
+
         </div>
-
-        <div class=" partition space  bg-5">
-            <h3 class="text-center"> Neural Style Transfer </h3>
+        <div class="col-sm-1"></div>
+        <div class=" webpartition col-sm-6 text-left">
+            <li><h3> Neural Style Transfer</h3></li>
             <p>
                 I absolutely <strong>LOVE</strong> this project as it generates ART with neural networks.
                 Neural Style Transfer algorithm is used to merge an image's content with another image's style to output unique styled art. A pre-trained model is used to do this task <br>
                 Content cost function is used using tensorflow. Style cost is computed using Style Matrix( Gram Matrix) and Style Weights. Total cost is the addition of these costs with added weights and Adam optimizer is used. <br>
                 Libraries used are matplotlib, numpy, pprint, scipy,tensorflow, PIL, etc. <br><br>
 
-
-
-                Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
             </p>
+            <button class="btn btn-secondary" type="button"> <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Neural%20Style%20Transfer" target="_blank">View on Github </a></button> <br><br>
 
-            <button class="btn btn-secondary" type="button">
-                <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Neural%20Style%20Transfer" target="_blank"> View on Github</a>
-            </button> <br><br>
-
-            <div class="text-left  col-sm-6">
-                <img src="" class="text-right framepic" height="350px">
-            </div>
-        </div>
-
-        <div class=" partition space bg-8">
-            <h3 class="text-center"> Autonomous Driving using YOLO algorithm</h3>
+            <li><h3>Autonomous Driving using YOLO algorithm</h3> </li>
             <p>
                 Here, we are mainly creating object detection on a car detection dataset and dealing with bounding boxes
 
                 <br> <br>
-                Libraries used : keras,numpy,scipy,matplotlib, tensorflow, pandas,PIL, argparse
+                Libraries used : keras,numpy,scipy,matplotlib, tensorflow, pandas,PIL
                 <br><br>
                 "You Only Look Once" (YOLO) performs object detection, and then can be applied it to car detection. As YOLO model is very computationally expensive to train, we have loaded pre-trained weights. It is a popular algorithm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
                 <br>
@@ -536,19 +529,125 @@
                 Anchor boxes are chosen by exploring the training data to choose reasonable height/width ratios that represent the different classes. <br>
 
                 <br>
-                Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+
             </p>
 
             <button class="btn btn-secondary" type="button">
                 <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/YOLO%20algorithm" target="_blank"> View on Github</a>
             </button> <br><br>
+        </div>
 
-            <div class="text-left  col-sm-6">
-                <img src="" class="text-right framepic" height="350px">
-            </div>
-        </div>-->
-        </li>
     </div>
+
+
+
+
+
+
+
+
+    <!-- First Container
+        <div class="container-fluid bg-1 ">
+            <h2 class="text-center display-3 font-italic"> My Own Projects </h2> <br>
+        </div>
+
+        <div class="container-fluid ">
+
+            <div class=" partition space  bg-7">
+                <h3 class="text-center"> Emotion Detection Model </h3>
+                <p>
+                    A model built with CNN that detects if a person is happy based on their smiles. This is the first time I have used Keras in Python. The train accuracy is 99% while test accuracy is 97%. <br>
+                    Training set = 600 pictures of size (600,64,64,3) <br> and
+                    Test-set = 150 pictures of size (10,64,64,3) <br>
+                    <br>
+                    Help taken from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+                </p>
+
+                <button class="btn btn-secondary" type="button">
+                    <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Emotion%20Detection" target="_blank"> View on Github</a>
+                </button> <br><br>
+
+                <div class="text-left  col-sm-6">
+                    <img src="" class="text-right framepic" height="350px">
+                </div>
+            </div>
+
+            <div class=" partition space bg-6">
+                <h3 class="text-center"> Face Recognition Model </h3>
+                <p>
+                    What's the difference between face verification and recognition?<br>
+                    Face verification is a simpler task that involves matching the input image with the claimed person's image. It is a 1:1 matching problem! <br>
+                    However, face recognition is a bit more complex. It is matching a given input image across a database of images to find who the particular individual is. It is a 1:K matching problem! <br>
+                <p>
+                <p>
+                    Both face recognition and verification are applied here with triplet loss function and a pre-trained model to map face images into 128-dimensional encodings. Numpy,Keras, Tensorflow, pandas, cv2 are used to build this model.
+
+                    <br> <br>
+                    Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+                </p>
+
+                <button class="btn btn-secondary" type="button">
+                    <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Face%20Recognition" target="_blank"> View on Github</a>
+                </button> <br><br>
+
+                <div class="text-left  col-sm-6">
+                    <img src="" class="text-right framepic" height="350px">
+                </div>
+            </div>
+
+            <div class=" partition space  bg-5">
+                <h3 class="text-center"> Neural Style Transfer </h3>
+                <p>
+                    I absolutely <strong>LOVE</strong> this project as it generates ART with neural networks.
+                    Neural Style Transfer algorithm is used to merge an image's content with another image's style to output unique styled art. A pre-trained model is used to do this task <br>
+                    Content cost function is used using tensorflow. Style cost is computed using Style Matrix( Gram Matrix) and Style Weights. Total cost is the addition of these costs with added weights and Adam optimizer is used. <br>
+                    Libraries used are matplotlib, numpy, pprint, scipy,tensorflow, PIL, etc. <br><br>
+
+
+
+                    Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+                </p>
+
+                <button class="btn btn-secondary" type="button">
+                    <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/Neural%20Style%20Transfer" target="_blank"> View on Github</a>
+                </button> <br><br>
+
+                <div class="text-left  col-sm-6">
+                    <img src="" class="text-right framepic" height="350px">
+                </div>
+            </div>
+
+            <div class=" partition space bg-8">
+                <h3 class="text-center"> Autonomous Driving using YOLO algorithm</h3>
+                <p>
+                    Here, we are mainly creating object detection on a car detection dataset and dealing with bounding boxes
+
+                    <br> <br>
+                    Libraries used : keras,numpy,scipy,matplotlib, tensorflow, pandas,PIL, argparse
+                    <br><br>
+                    "You Only Look Once" (YOLO) performs object detection, and then can be applied it to car detection. As YOLO model is very computationally expensive to train, we have loaded pre-trained weights. It is a popular algorithm because it achieves high accuracy while also being able to run in real-time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
+                    <br>
+                    The YOLO architecture is: IMAGE (m, 608, 608, 3) -> DEEP CNN -> ENCODING (m, 19, 19, 5, 85). <br><br>
+
+                    The input is a batch of images, and each image has the shape (m, 608, 608, 3)
+                    The output is a list of bounding boxes along with the recognized classes.  <br>
+
+                    Anchor boxes are chosen by exploring the training data to choose reasonable height/width ratios that represent the different classes. <br>
+
+                    <br>
+                    Programming assignment from the deeplearning.ai course by Andrew Ng on Coursera. <br>
+                </p>
+
+                <button class="btn btn-secondary" type="button">
+                    <a class="visiblefont" href="https://github.com/Rifahaziz/deeplearning.ai-coursera/tree/main/4.%20Convolutional%20Neural%20Networks/YOLO%20algorithm" target="_blank"> View on Github</a>
+                </button> <br><br>
+
+                <div class="text-left  col-sm-6">
+                    <img src="" class="text-right framepic" height="350px">
+                </div>
+            </div>
+        </li>
+    </div>-->
 
     <div class="container-fluid bg-5 text-center">
         <h3> Undergrad Thesis</h3>
@@ -570,7 +669,7 @@
         </div>
 
 
-        </a>
+        
 
 
 

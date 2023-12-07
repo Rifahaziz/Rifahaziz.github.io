@@ -195,22 +195,47 @@
                       
 
                         <li>
-                            I mainly explore and compare two segmentation methods, traditional neural networks <a href="https://arxiv.org/abs/2207.02696">Yolov7</a> and a multimodal encoder-decoder transformers <a href="https://arxiv.org/abs/2204.08721">TokenFusion</a>, in terms of
+                            I mainly explore and compare two segmentation methods, traditional neural networks <a href="https://arxiv.org/abs/2207.02696">Yolov7</a> and
+                            a multimodal encoder-decoder transformers <a href="https://arxiv.org/abs/2204.08721">TokenFusion</a>, in terms of
                             performance and outputs.
                         </li>
                         <br />
                         <li>
-                            The traditional model Yolov7 uses solely image inputs with traditional
-                            CNNs for segmentation tasks while the transformer method TokenFusion fuses images withcorresponding depths in transformer encoder-decoder models.
+                            <a href="https://arxiv.org/abs/2207.02696">Yolov7</a> : solely depends on image inputs with traditional
+                            CNNs for segmentation tasks. Originally trained on a much larger dataset (MS Coco dataset) of only images. Yolo originally performs object detection,
+                            but version 7 can also perform segmentation.
                         </li>
                         <br />
+                        <li><a href="https://arxiv.org/abs/2204.08721">TokenFusion</a>:  transformer method depends on multimodal data (Image and depth), fusing images with
+                        corresponding depths in the encoder-decoder models. Originally trained on a smaller dataset (Nyudv dataset). Can perform both segmentation and object detection</li>
+                        <br />
+                      
                         <li>
                             The results demonstrate that the inclusion of depth images
                             are highly beneficial for segmenting the interior structure of the indoor environment, and the performance based on
                             training, time and accuracy are also compared between the two models. Both the methods are quite different in terms of
                             input modalities and backbone networks, and the advantages and disadvantages of both methods are discussed.
                         </li>
+                        <br />
 
+                        <li>Questions I asked myself while using the ML model: </li>
+                        <ul>
+
+                            <li>
+                                All these models are shown to perform really well on the dataset they were trained on, but does it
+                                actually perform well on ANY indoor dataset? Let's explore!
+                            </li>
+                            <li>
+                                If it doesn't, what are the possible reasons? What should be fine-tuned?
+                            </li>
+                            <li>
+                                What information is it failing to understand or percieve properly?
+
+                            </li>
+                            <li>Is this a generalization problem? 
+                            </li>
+                            <li>Is this a data preprocessing problem?</li>
+                        </ul>
                     </ul>
 
 

@@ -53,6 +53,7 @@
             #ECE2D0;
             #97AABD;
             color: #000000;
+
         }
 
         .bg-5 {
@@ -120,7 +121,7 @@
         .single_proj{
             margin-left:30px;
             margin-right:10px;
-            margin-top:10px;
+            margin-top:20px;
         }
         .desc-text{
             margin-left:5%;
@@ -158,188 +159,179 @@
     <!--  Container -->
 
 
+    <div class="container-fluid bg-2">
+        <h2 class="margin text-center">HCI Projects</h2>
+
+        <div class="partition">
+
+            <div class=" single_proj">
+
+                <h3>
+                    Project 1 : Reinforcement Learning for VR Application to Automate Testing
+                </h3>
+                <p class="col-sm-4 ">
+                    Introduced pedagogical learning among RL agents for a naive agent to learn from an expert agent about paths using Q-Learning. The idea
+                    was to automate the testing scenario with RL agents, you may have a look at the full paper that was published at HCII'2022.<br />
+
+
+                    <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://nrc-publications.canada.ca/eng/view/object/?id=092abd61-a800-412c-968e-a86ec8f21029" target="_blank">Link to Paper (HCII'2022)</a></button>
+                </p>
+                <img src="images/vr.png" class="text-center framepic" width="65%"> <br />
+                <div class=" bg-5 col-sm-4" padding="10px">
+
+                    <p>
+                        Details:</br> <br />
+                        - As you can see there was an incident with the truck and the trigger zone around the incident is marked.<br />
+                        -The elevation lands are in levels, which represents a mountain. <br />
+                        -The trainee location is at the bottom left. <br />
+                        -Now where should the trainee learn to go to navigate the incident without being too close to the truck as
+                        oil/gas dripping might be dangerous, but yet close enough to understand in detail about the situation and read the labels on the truck? <br />
+                        -Since we don't want humans to do this, we want to automate this with RL agent using reinforcement learning. <br />
+                        -So the problem is : navigate to a safe space with reward and punishment system.<br /> <br />
+                    </p>
+                </div>
+
+                <div class="bg-1 col-sm-4" padding="10px">
+                    <p>
+                        <br />
+                        -But how is this solving the overall problem? We need to connect this with the actual problem of building the VR system with the 3D environment.<br />
+                        -Also, we didn't have enough people to try on the VR environment and provide enough data for their experiences, so let's automate the testing system! <br />
+                        -Why need humans to test the VR system? This requires shipping the VR to their places and using thier time. What if we could use AI agents instead of humans?<br />
+                        -This would obviously need a lot of work, but let's initiate the process and see how far I can go. <br />
+                        -Narrowing the borad problem down, now we want to focus on automating one aspect of the whole VR application : navigating to a safe space to observe the incident. <br />
+                        <br /><br />
+                    </p>
+                </div>
+                <div class="bg-4 col-sm-4" padding="10px">
+                    <p>
+
+                        -Also, we don't want to train all new testers from scratch about how to navigate to a desired position. We want one tutor agent who has the best knowledge, and then
+                        other new agents can learn from this tutor.<br />
+                        -Tried using OpenAI environments, but could not change them to the environment I wanted, so opted for creating a simple environment with basic python.<br />
+                        -So I train one agent properly with the Q-Learning algorithm and placing rewards/punishments on the map (Details about the functions are on the paper)<br />
+                        -I introduce a pedagogical system where naive agents can get the knowledge from the trained tutoring agent, by simply making the Q-Learning table of the
+                        tutor agent sharable.<br />
+                        -Now , whenever the naive agent is confused, it can also lookup the Q-table of the tutor agent, and be guided!<br />
+
+
+                    </p>
+
+
+                </div>
+                <br />
+
+            </div>
+
+        </div>
+        </div>
+
+
         <div class="container-fluid bg-2">
-            <h3 class="margin text-center">HCI Projects</h3>
 
             <div class="partition">
+                <div class="single_proj">
 
-                <div class=" bg-5 single_proj">
-                    <li  >
-                        <h3>
-                             Reinforcement Learning for VR Application to Automate Testing</h3>
-                        <p class="col-sm-4">
-                            Introduced pedagogical learning among RL agents for a naive agent to learn from an expert agent about paths using Q-Learning. The idea
-                            was to automate the testing scenario with RL agents, you may have a look at the full paper that was published at HCII'2022.
+                    <h3>Project 2 :  Usability Study on Pathao Application</h3>
 
-
-                            <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://nrc-publications.canada.ca/eng/view/object/?id=092abd61-a800-412c-968e-a86ec8f21029" target="_blank">Link to Paper (HCII'2022)</a></button>
-                        </p>
-                            <img src="images/vr.png" class="text-center framepic" width="60%"> <br />
-                            <div class=" bg-5 col-sm-4">
-
-                                <p>
-                                    Summary:</br>
-                                    - As you can see there was an incident with the truck and the trigger zone around the incident is marked.<br />
-                                    -The elevation lands are in levels, which represents a mountain. <br />
-                                    -The trainee location is at the bottom left. <br />
-                                    -Now where should the trainee learn to go to navigate the incident without being too close to the truck as
-                                    oil/gas dripping might be dangerous, but yet close enough to understand in detail about the situation and read the labels on the truck? <br />
-                                    -Since we don't want humans to do this, we want to automate this with RL agent using reinforcement learning. <br />
-                                    -So the problem is : navigate to a safe space with reward and punishment system.<br />
-                                </p>
-                            </div>
-
-                            <div class="bg-5 col-sm-4">
-                                <p>
-                                   <br />
-                                    -But how is this solving the overall problem? We need to connect this with the actual problem of building the VR system with the 3D environment.<br />
-                                    -Also, we didn't have enough people to try on the VR environment and provide enough data for their experiences, so let's automate the testing system! <br />
-                                    -Why need humans to test the VR system? This requires shipping the VR to their places and using thier time. What if we could use AI agents instead of humans?<br />
-                                    -This would obviously need a lot of work, but let's initiate the process and see how far I can go. <br />
-                                    -Narrowing the borad problem down, now we want to focus on automating one aspect of the whole VR application : navigating to a safe space to observe the incident. <br />
-
-                                </p>
-                            </div>
-                            <div class="bg-5 ol-sm-4">
-                                <p>
-                                    <br />
-                                    -Also, we don't want to train all new testers from scratch about how to navigate to a desired position. We want one tutor agent who has the best knowledge, and then
-                                    other new agents can learn from this tutor.<br />
-                                    -Tried using OpenAI environments, but could not change them to the environment I wanted, so opted for creating a simple environment with basic python.<br />
-                                    -So I train one agent properly with the Q-Learning algorithm and placing rewards/punishments on the map (Details about the functions are on the paper)<br />
-                                    -I introduce a pedagogical system where naive agents can get the knowledge from the trained tutoring agent, by simply making the Q-Learning table of the
-                                    tutor agent sharable.<br />
-                                    -Now , whenever the naive agent is confused, it can also lookup the Q-table of the tutor agent, and be guided!<br />
+                    <p>
+                        A usability survey on a ride-sharing app called 'Pathao', based in Bangladesh.
+                    </p>
+                    <img src="images/pathao.png" class="text-right framepic" width="50%">
+                    <br />
+                    <br />
 
 
-                                </p>
-
-                            </div>
-                        </li>
-                    </div>
-                   
-
-                          
-
-
-
-                <!--<div class=" col-sm-6">
-                        <img src="images/vr.png" class="text-right framepic" width="90%" >
-
-
-                </div>-->
-
-
-
-            <div class="partition">
-                <div class=" bg-6 single_proj">
-                    <li>
-                        Hand Gesture Interpreter
-                        <p>
-                            A glove made for the disabled people to ease their communication with the help of arduino and flex sensors.
-                            It is designed to assist the lives of deaf,mute and aged people, which we believe is necessary in Bangladesh.
-                            This cotton glove is comfortable and flexible to use where certain bending angles and fingers represent particular meanings. <br /><br />
-                        </p>
-                        <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://www.youtube.com/watch?v=QFGW_SqSZFg" target="_blank">Watch Full Project</a></button>
-                        <button class="btn btn-secondary" type="button"> <a class="visiblefont" href="https://github.com/Rifahaziz/SignLanguageInterpreter.git" target="_blank">View on Github </a></button> <br><br>
-                        <img src="images/glove.jpg" class="text-right framepic" width="70%">
-                        <br />
-                        <br />
-                    </li>
-                </div>
-                <!--<div class="col-sm-6">
-
-                    <img src="images/glove.jpg" class="text-right framepic" width="90%">
-                </div>-->
-
-
-            </div>
-
-            <div class="partition">
-                <div class=" bg-1 single_proj">
-                    <li>
-                        Usability Study on Pathao Application
-
-                        <p>
-                            A usability survey on a ride-sharing app called 'Pathao', based in Bangladesh.<br /><br /><br /><br /><br /><br />
-                        </p>
-                        <img src="images/pathao.png" class="text-right framepic" width="90%">
-                        <br />
-                        <br />
-
-                    </li>
                 </div>
                 <!--<div class=" col-sm-6">
-                    <img src="images/pathao.png" class="text-right framepic" width="90%">
-                </div>-->
+                <img src="images/pathao.png" class="text-right framepic" width="90%">
+            </div>-->
             </div>
+        
 
+                <div class=" single_proj">
 
+                    <h3>Project 3 : Hand Gesture Interpreter </h3>
 
+                    <img src="images/glove.jpg" class="text-right framepic" width="50%">
+                    <p class="col-sm-4">
+                        A glove made for the disabled people to ease their communication with the help of arduino and flex sensors.
+                        It is designed to assist the lives of deaf,mute and aged people, which we believe is necessary in Bangladesh.
+                        This cotton glove is comfortable and flexible to use where certain bending angles and fingers represent particular meanings. <br /><br />
+                    </p>
 
+                    <br />
+                    <button class="btn btn-secondary" type="button"><a class="visiblefont" href="https://www.youtube.com/watch?v=QFGW_SqSZFg" target="_blank">Watch Full Project</a></button>
+                    <button class="btn btn-secondary" type="button"> <a class="visiblefont" href="https://github.com/Rifahaziz/SignLanguageInterpreter.git" target="_blank">View on Github </a></button> <br><br>
+                    <br />
 
-            <div class="container-fluid bg-2">
-                <h3 class="margin text-center">Design Projects</h3>
-                <div class="text-center">
-                    From the Studio First Program at Azreilli School of Arhcitecture.
                 </div>
-                <div class="row text-center">
 
-                    <div>
 
-                        <a href="https://www.instagram.com/p/CtzP27ZrILq/">
-                            <img src="images/pinup3.png" alt="Studio First Project 3" style="width:70%">
-                            <div class="art-title">
-                                <p>
-                                    The Shell Cities :
+
+
+
+                <div class="container-fluid bg-2">
+                    <h2 class="margin text-center">Design Projects</h2>
+                    <div class="text-center">
+                        From the Studio First Program at Azreilli School of Arhcitecture.
+                    </div>
+                    <div class="row text-center">
+
+                        <div>
+
+                            <a href="https://www.instagram.com/p/CtzP27ZrILq/">
+                                <img src="images/pinup3.png" alt="Studio First Project 3" style="width:70%">
+                                <div class="art-title">
+                                    <p>
+                                        The Shell Cities :
+                                    </p>
+                                </div>
+                            </a>
+                            <p class=" desc-text">
+                                Inspired by Calvino's twin cities, I came up with the idea of designing mirroring cities,
+                                where both cities will be a mirror of their own yet different. he whole city is inspired by
+                                beach elements.Thought of symmetrical objects. A unique and imaginary method of travelling
+                                between the cities. Umbrella it was! Inspired bythe symmetry and round polygonal shapes of an
+                                umbrella, I thought of how it could be used asa means of travelling. The buildings shapes are
+                                inspired from a sea shell interior, connecting the roundness of the sea shells with umbrellas.
+                            </p>
+                        </div>
+
+                        <div class="row text-center">
+                            <br>
+                            <div>
+                                <a href="https://www.instagram.com/p/CtM9ztnPXII/">
+                                    <img src="images/pinup2.png" alt="Studio First Project 2" style="width:70%">
+                                    <div class="art-title">
+                                        <p> The Listening Hill:</p>
+                                    </div>
+                                </a>
+                                <p class="desc-text">
+                                    Observing a space (a hill located at Mooney's Bay at Ottawa), and the activities
+                                    that are carried out depending on the time of the day! The humans are handrawn and then digitalized
+                                    with Adobe Illustrator and Photoshop
                                 </p>
                             </div>
-                        </a>
-                        <p class="desc-text">
-                            Inspired by Calvino's twin cities, I came up with the idea of designing mirroring cities,
-                            where both cities will be a mirror of their own yet different. he whole city is inspired by
-                            beach elements.Thought of symmetrical objects. A unique and imaginary method of travelling
-                            between the cities. Umbrella it was! Inspired bythe symmetry and round polygonal shapes of an
-                            umbrella, I thought of how it could be used asa means of travelling. The buildings shapes are
-                            inspired from a sea shell interior, connecting the roundness of the sea shells with umbrellas.
-                        </p>
+                        </div>
+                        <div class="row text-center">
+                            <div>
+                                <a href="https://www.instagram.com/p/CtMpp2gONU1/">
+                                    <img src="images/pinup1.jpg" alt="Studio First Project 1" style="width:70%">
+                                    <div class="art-title">
+                                        <p>The Duality in Space and Personality:</p>
+                                    </div>
+                                </a>
+                                <p class="desc-text">
+                                    Designed a space for the leopard and the seal to co-exist peacefully,
+                                    with the help of the moving gate, they can choose to stay with/without each other's
+                                    company.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row text-center">
-                        <br>
-                        <div>
-                            <a href="https://www.instagram.com/p/CtM9ztnPXII/">
-                                <img src="images/pinup2.png" alt="Studio First Project 2" style="width:70%">
-                                <div class="art-title">
-                                    <p> The Listening Hill:</p>
-                                </div>
-                            </a>
-                            <p class="desc-text">
-                                Observing a space (a hill located at Mooney's Bay at Ottawa), and the activities
-                                that are carried out depending on the time of the day! The humans are handrawn and then digitalized
-                                with Adobe Illustrator and Photoshop
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div>
-                            <a href="https://www.instagram.com/p/CtMpp2gONU1/">
-                                <img src="images/pinup1.jpg" alt="Studio First Project 1" style="width:70%">
-                                <div class="art-title">
-                                    <p>The Duality in Space and Personality:</p>
-                                </div>
-                            </a>
-                            <p class="desc-text">
-                                Designed a space for the leopard and the seal to co-exist peacefully,
-                                with the help of the moving gate, they can choose to stay with/without each other's
-                                company.
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
-
-
-            </div>
 
 
 

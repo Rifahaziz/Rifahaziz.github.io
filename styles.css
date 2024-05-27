@@ -5,7 +5,7 @@
 header,footer{
 	background-color:#FAAB88;
 	padding:10px;
-	
+
 }
 
 .menu{
@@ -16,10 +16,6 @@ nav{
 	background-color: #FBF3C0;
 	padding :10px;
 	width :100%;
-}
-.container{
-
-
 }
 .pic{
 	float:left;
@@ -32,9 +28,7 @@ nav{
 	text-align: center;
 
 }
-ul{
-	list-style: none;
-}
+
 ul li{
 	display: inline-block;
 	padding:20px;
@@ -42,7 +36,7 @@ ul li{
 	border-color: white;
 }
 .heading{
-	font-weight: bold; 
+	font-weight: bold;
 }
 .visiblefont{
 	color:#501b1d;
@@ -53,17 +47,17 @@ ul li{
 	margin :10px;
 }
 .partition{
-	
+
 	border-style: groove;
     padding :20px;
-	
+
 	margin:5px;
 }
 .webpartition{
 
 	border-spacing: 50px;
 
-	
+
 
 
 }
@@ -71,139 +65,225 @@ ol li, ol p,ol button{
 	padding:10px;
 	margin-left:40px;
 }
-.artframe{
-	height:100px;
-}
-.row{
-	grid-row-gap:500px; 
-	margin:50px;
-}
-.caption{
-	padding-top:10px;
-}
+
+
+<!------------new css----------------->
 
 body {
 	font: 20px Montserrat, sans-serif;
 	line-height: 1.8;
 	color: #CEBEBE;
-	/*#ADADAD #f5f6f7;*/
 }
-
-.p {
-	font-size: 16px;
-}
-
-.margin {
-	margin-bottom: 45px;
-}
-
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
 .bg-1 {
-	background-color: #CEBEBE;
-
+	background-color: #CEBEBE; /*#6D2E46;
+	#A46E7F;
+	#9E5A63;*/
 	color: #000000;
 }
-
 .bg-2 {
-	background-color: #E4E1DB;
-	
+	background-color: #E4E1DB; /*#F3EDE2;#A26769; #644E5B;*/
 	color: #000000;
 }
-
 .bg-3 {
-	background-color: #ffffff;
-	color: #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
-
 .bg-4 {
 	background-color: #D5B9B2;
-/*	#ECE2D0;
+	/*#ECE2D0;
 	#97AABD;*/
 	color: #000000;
 }
-
 .bg-5 {
-	background-color: #D5B9B2;
-/*	#987689;*/
+	background-color: #987689;
 	color: #000000;
 }
+.bg-6{
+	background-color: #a1888e;
+	color: #000000;
 
+}
+.bg-7{
+	background-color: #c4bfbf;
+	color: #000000;
+
+
+}
+.button-link {
+  display: inline-block;
+  /* padding: 10px 20px;
+  background-color: #956B79; Change the background color to your preference */
+  /* color: #fff; Change the text color to your preference */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .container-fluid {
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-
 .navbar {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border: 0;
 	border-radius: 0;
-	margin-bottom: 0;
 	font-size: 15px;
 	letter-spacing: 5px;
-}
+	margin-bottom: 0;
+	background-color: pink;
 
-.navbar-nav li a:hover {
-	color: #19E5A63 !important; /*1ABC9C*/
 }
-
-.worktitle {
-	color: #00000;
-/*	# text-decoration: underline;*/
+.navbar-nav  li a:hover {
+	color: #9E5A63 ;
 }
+.worktitle{
+color : 00000 ;
 
-.yoga {
-	padding-left: 50px;
-	padding-right: 50px;
 }
-
-.hobbysub {
-	color: #ebccda;
+.yoga{
+padding-left : 50px;
+padding-right : 50px;
 }
-
-.hobbyart {
-	color: #fae3c6;
+.hobbysub{
+color :#ebccda ;
 }
-
+.hobbyart{
+color:  #fae3c6;
+}
 .fa-instagram {
-	background: #bb173a;
-	color: white;
+background: #bb173a;
+color: white;
 }
-
 .fa-linkedin {
-	background: #007bb5;
-	color: white;
+background: #007bb5;
+color: white;
 }
-
 .fa:hover {
-	opacity: 0.7;
+opacity: 0.7;
 }
 
 .fa-facebook {
-	background: #3B5998;
-	color: white;
+background: #3B5998;
+color: white;
 }
-
 .fa-google {
-	background: #dd4b39;
-	color: white;
+background: #dd4b39;
+color: white;
 }
-
 .fa {
-	padding: 10px;
-	font-size: 20px;
-	width: 40px;
-	text-align: center;
-	text-decoration: none;
-	margin: 0;
-	border-radius: 50%;
+padding: 10px;
+font-size: 20px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+margin:0;
+border-radius: 50%;
 }
-
-.exptitle {
-	text-decoration: underline;
+.exptitle{
+text-decoration-style: none
 }
-
 .boldtitle {
-	font-weight: 500;
-	text-decoration: underline;
+font-weight: 600;
+
+}
+.skills {
+
+  margin-right:10px;
+}
+.certifications{
+text-decoration: underline;
+text-decoration-color : lightpink;
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+.box {
+position: relative;
+width: 300px;
+height: 200px;
+margin: 20px;
+perspective: 1000px;
+}
+
+.front, .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+transition: transform 0.6s;
+}
+
+.front {
+/* background-color: #CEBEBE; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.back {
+background-color: #e9e9e9;
+color: #333;
+transform: rotateY(180deg);
+padding: 20px;
+box-sizing: border-box;
+overflow-y: auto;
+}
+
+.box:hover .front {
+transform: rotateY(-180deg);
+}
+
+.box:hover .back {
+transform: rotateY(0deg);
+}
+
+
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	perspective: 1000px;
+  }
+
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%; /* This line makes the card round */
+		backface-visibility: hidden;
+
+  }
+
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+
+  .flip-card-back {
+	background-color: #2980b9;
+	color: white;
+	transform: rotateY(180deg);
+  }
+  #typing .highlight {
+	/* background-color: white; */
+	color: black;
+	font-style: italic;
+
+
+  }

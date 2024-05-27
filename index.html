@@ -14,135 +14,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <style>
-          body {
-              font: 20px Montserrat, sans-serif;
-              line-height: 1.8;
-              color: #CEBEBE; #ADADAD /*#f5f6f7;*/
-          }
-      p {font-size: 16px;}
-      .margin {margin-bottom: 45px;}
-          .bg-1 {
-              background-color: #CEBEBE; /*#6D2E46;
-              #A46E7F;
-              #9E5A63;*/
-              color: #000000;
-          }
-          .bg-2 {
-              background-color: #E4E1DB; /*#F3EDE2;#A26769; #644E5B;*/
-              color: #000000;
-          }
-          .bg-3 {
-            background-color: #ffffff;
-            color: #000000;
-          }
-          .bg-4 {
-              background-color: #D5B9B2;
-              /*#ECE2D0;
-              #97AABD;*/
-              color: #000000;
-          }
-          .bg-5 {
-              background-color: #987689;
-              color: #000000;
-          }
-        .button-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #956B79; /* Change the background color to your preference */
-            color: #fff; /* Change the text color to your preference */
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-      .container-fluid {
-        padding-top: 70px;
-        padding-bottom: 70px;
-      }
-      .navbar {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: 15px;
-        letter-spacing: 5px;
-      }
-      .navbar-nav  li a:hover {
-        color: #19E5A63 !important; /*1ABC9C*/
-      }
-      .worktitle{
-        color : #00000;
-       # text-decoration: underline;
 
-      }
-      .yoga{
-        padding-left : 50px;
-        padding-right : 50px;
-      }
-      .hobbysub{
-        color :#ebccda ;
-      }
-      .hobbyart{
-        color:  #fae3c6;
-      }
-      .fa-instagram {
-      background: #bb173a;
-      color: white;
-    }
-    .fa-linkedin {
-      background: #007bb5;
-      color: white;
-    }
-    .fa:hover {
-        opacity: 0.7;
-    }
-
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-    }
-    .fa-google {
-      background: #dd4b39;
-      color: white;
-    }
-    .fa {
-      padding: 10px;
-      font-size: 20px;
-      width: 40px;
-      text-align: center;
-      text-decoration: none;
-      margin:0;
-      border-radius: 50%;
-    }
-    .exptitle{
-      text-decoration: underline;
-    }
-    .boldtitle {
-        font-weight: 600;
-        text-decoration: underline;
-
-
-    }
-    .skills {
-            color: #956B79;
-            margin-right:10px;
-    }
-    .certifications{
-        text-decoration: underline;
-        text-decoration-color : lightpink;
-    }
-
-
-
-
-      </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+   <nav class="navbar-default">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -159,51 +36,140 @@
                     <li><a href="dataviz.html">Data Science </a></li>
                     <li><a href="game.html">Game Dev</a></li>
 
-
-                    <!--   <li><a href="design.html">Design</a></li>
-                    <a href="https://rifahswork.wordpress.com/">Masters </a></li>  david mould's work-->
-                    <!--  <li><a href="projects.html">Web </a></li>    not including web projects -->
-                    <!-- <li><a href="personalprojects.html">Personal </a></li>
-                    <li><a href="art.html">Art</a></li>-->
-
                 </ul>
             </div>
         </div>
-    </nav>
+        </nav>
+
 
     <!-- First Container -->
     <div class="container-fluid bg-1 text-center">
-        <h3 class="margin"></h3>Hi there! <h3 />
-        <h4>
-            I'm Rifah, Welcome to my page! <br />
-            <br />
-            I equally enjoy being creative and <br />
-            logical in the field of technology!<br />
-            <br /><br />
+        <h3 class="margin">Hi there! </h3>
+        <p id="typing"></p>
+        <br>
 
-        </h4>
+        <script>
+            var i = 0;
+            var txt = "I'm Rifah, and I'm so glad that you're visiting me! \n I equally enjoy being creative and logical in the field of technology!";
+            var speed = 60; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+            if (i < txt.length) {
+                var char = txt.charAt(i) === '\n' ? '<br>' : txt.charAt(i);
+                // Wrap the character in a span
+                var span = '<span class="highlight">' + char + '</span>';
+                document.getElementById("typing").innerHTML += span;
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+            //  else {
+            //     setTimeout(function() {
+            //     i = 0;
+            //     document.getElementById("typing").innerHTML = '';
+            //     setTimeout(typeWriter, speed);
+            //     }, 5000);
+            // }
+            }
+
+            typeWriter();
+        </script>
 
 
         <img src="images/rsa.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Rifah" width="400px"> <br />
-        <a class="button-link btn btn-primary" type="button" href="https://drive.google.com/file/d/1nveMB-ZW4kTkP8vmj9Y6_L-DeEa3Q3aF/view?usp=share_link"> View Resume</a>   <br /> <br />
+        <h3>Data Scientist/AI Researcher</h3>
+        <a class="button-link btn bg-6" type="button" href="https://drive.google.com/file/d/1nveMB-ZW4kTkP8vmj9Y6_L-DeEa3Q3aF/view?usp=share_link"> View Resume</a>
+        <a class="button-link btn bg-6" type="button" href="design_and_art.html">View Art</a> <br> <br> <br>
         <!--<a class="button-link btn btn-primary" type="button" href="aiml.html">AI (deep learning)</a>
         <a class="button-link btn btn-primary" type="button" href="mixed.html">Programming</a>
         <a class="button-link btn btn-primary" type="button" href="hci.html">HCI</a>
         <a class="button-link btn btn-primary" type="button" href="dataviz.html"> Data Visualization </a>-->
         <!---<a class="button-link btn btn-primary" type="button" href="https://drive.google.com/file/d/1zRWsrxN1mUVV4gaZgRVTH8EexxXrmWRT/view?usp=share_link"> View HCI/Design Resume</a> -->
-        <h3>Masters of Computer Science</h3>
-        <h4>Carleton University </h4>
-        <br />
-        <h3>BSc. in Computer Science</h3>
-        <h4> Brac University </h4>
-        <br />
-        <h3> O & A'Levels</h3>
-        <h4>International Turkish Hope School'15 </h4>
+        <p><h4>Computer Science (Masters) </h4> Carleton University'23</p>
+        <p><h4>Computer Science (Bachelors)</h4> Brac University'19</p>
+
 
 
     </div>
 
-
+    <!-- Knowledge Container -->
+    <div class="container-fluid text-center">
+        <h3 class="margin worktitle">Different areas I worked in to push my curiousity further: <h3>
+        <div class="box-container">
+            <div class="box">
+                <div class="front bg-1">
+                    <h3 class="boldtitle">Machine Learning</h3>
+                </div>
+                <div class="back">
+                    <p>PYTHON, MATLAB</p>
+                    <p>Pytorch, Tensorflow </p>
+                    <p>Segmentation, Detection, Neural Style Transfer, GANs, 3D Reconstruction, Data Fusion, Transformer Networks, LLMs , Q-Learning</p>
+                </div>
+            </div>
+			<div class="box">
+				<div class = "front bg-4">
+					<h3 class="boldtitle">Data Science</h3>
+				</div>
+				<div class="back">
+					<p>Python</p>
+					<p>PowerBI, Tableau</p>
+					<p>Azure, Docker, Databricks</p>
+				</div>
+			</div>
+            <div class="box">
+				<div class = "front bg-6">
+					<h3 class="boldtitle">Development</h3>
+				</div>
+				<div class="back">
+					<p>JAVA</p>
+					<p>SQL</p>
+					<p>Html/CSS/Php</p>
+					<p>Javascript</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class = "front bg-4">
+					<h3 class="boldtitle">HCI/Game</h3>
+				</div>
+				<div class="back">
+					<p>C#</p>
+					<p>Unity</p>
+					<p>VR (Oculus Quest 2)</p>
+					<p>Genetic Algorithm</p>
+					<p>Procedural Content Generation (PCG) </p>
+					<p>Reinforcement Learning</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class = "front bg-5">
+					<h3 class="boldtitle">Design</h3>
+				</div>
+				<div class="back">
+					<p>Adobe Photoshop</p>
+                    <p>Adobe Illustrator</p>
+                    <p>Adobe In-Design</p>
+					<p>Figma</p>
+					<p>Rhino 3D</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class = "front bg-7">
+					<h3 class="boldtitle">Low-Level Language</h3>
+				</div>
+				<div class="back">
+					<p>MIPS assembly Language</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class = "front bg-1">
+					<h3 class="boldtitle">Certifications</h3>
+				</div>
+				<div class="back">
+                    <p class="certifications"><a href="https://coursera.org/share/a6973c2ba81bca56cbb70f994a2548a0">DeepLearning.ai Specialization</a></p>
+					<p class="certifications"><a href="https://coursera.org/share/bcc78bd9c3d1ff9f52c76f0f5da2b54c">IBM - Python for Datascience,AI and Development</a> </p>
+				</div>
+			</div>
+        </div>
+    </div>
 
 
     <!-- 2ND Container (Grid) -->
@@ -269,66 +235,11 @@
 
 
 
-    <!-- 3RD Container -->
-    <div class="container-fluid bg-2 text-center">
-        <p class="margin worktitle">Computer science is a broad field, and I've worked in different areas of computer science by pushing my persistence and curiousity.</p>
-        <h3 class="boldtitle"> Machine Learning</h3>
-        <div class="text-center skills">
-            <p>PYTHON , MATLAB </p>
-            <p> Frameworks : Pytorch, Tensorflow</p>
-            <p> Libraries  : Tensorflow, pytorch, numpy, pandas, OpenCV, matplotlib, Scikit-Learn,GDAL </p>
-            <p>Segmentation, Detection, Neural Style Transfer, GANs , 3D Reconstruction , Data Fusion, Transformer Networks </p>
-            <p>Linux OS , CUDA </p>
-            <p class="certifications"><a href="https://coursera.org/share/a6973c2ba81bca56cbb70f994a2548a0">DeepLearning.ai Specialization</a> </p>
-        </div>
-        <h3 class="boldtitle"> Data Science</h3>
-        <div class="skills">
-            <p> PYTHON, JAVA, SQL </p>
-            <p> Amazon Quicksight , Tableau</p>
-            <p> AWS, Azure, Docker, Databricks </p>
-            <p><a href="https://coursera.org/share/bcc78bd9c3d1ff9f52c76f0f5da2b54c">IBM - Python for Datascience,AI and Development</a> </p>
-        </div>
-
-        <h3 class="boldtitle"> Human-Computer Interaction/ Game Development</h3>
-        <div class="skills">
-            <p>C#, Unity</p>
-            <p> Virtual Reality, Oculus Quest 2 </p>
-            <p> Usability Study/Surveys , Literary Reviews, UX Research</p>
-            <p> Reinforcement Learning </p>
-            <p>Procedural Content Generation (PCG) </p>
-            <p>Arduino</p>
-            <p>Kanban</p>
-        </div>
-
-        <h3 class="boldtitle"> Design</h3>
-        <div class="skills">
-            <p>Adobe Photoshop, Adobe Illustrator, Adobe In-Design</p>
-            <p>Rhino 3D</p>
-            <p>Figma</p>
-
-        </div>
-
-
-        <h3 class="boldtitle">Web Development </h3>
-        <div class="skills">
-            <p>Java</p>
-            <p>MySQL</p>
-            <p>Javascript (Angular, Material)</p>
-            <p>HTML/CSS (Bootstrap)</p>
-            <p>PHP</p>
-
-        </div>
-        <h3 class="boldtitle"> Low-Level Language </h3>
-        <div class="skills">
-            <p>MIPS Assembly Language</p>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-2 text-center">
+    <!-- <div class="container-fluid bg-2 text-center">
             <h3 class="margin heading exptitle"> Other Creative Hobbies </h3>
             <a class="button-link btn btn-primary" type="button" href="design_and_art.html">Art/Design</a>
 
-        </div>
+        </div> -->
 
         <!-- Footer -->
         <footer id="footer" class="container-fluid bg-3 text-center">

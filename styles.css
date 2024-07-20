@@ -287,3 +287,6 @@ transform: rotateY(0deg);
 
 
   }
+  #typing {
+    font-family: Helvetica, sans-serif; /* Replace with your desired font */
+}
